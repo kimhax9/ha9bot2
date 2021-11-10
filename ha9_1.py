@@ -117,13 +117,6 @@ async def on_message(message):
         embed.add_field(name="⚔소서리스", value="아이스레몬홍차", inline=True)
         await message.channel.send(embed=embed)
 
-    if message.content == "dkdkdkdkdkdkdk":
-        embed = discord.Embed(title="발탄파티모집", description="11월 9일 9:30 출발 발탄하드", color=0x00aaaa)
-        embed.set_footer(text="⚔딜러🛡서폿")
-        msg = await message.channel.send(embed=embed)
-        await msg.add_reaction("⚔")  # 딜러
-        await msg.add_reaction("🛡")  # 서폿
-
 
 
 
