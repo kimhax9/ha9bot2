@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 from discord.ext import commands
 from discord.ext.commands import Bot
@@ -140,5 +141,5 @@ async def on_reaction_add(reaction, user):
         await reaction.message.channel.send(user.name + "님이 서폿을 지원")
 
 
-
-client.run("OTA3NTExMzI2NDEzMzE2MTI2.YYoPyA.O9ZQ8F3cLpt5hr03gfpK7Krq6go")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
