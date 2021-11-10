@@ -1,8 +1,6 @@
 import discord
 import os
-import asyncio
-from discord.ext import commands
-from discord.ext.commands import Bot
+
 
 
 client = discord.Client()
@@ -128,17 +126,6 @@ async def on_message(message):
 
 
 
-@client.event
-async def on_reaction_add(reaction, user):
-
-    if user.bot == 1: #봇이면 패스
-        return None
-    if str(reaction.emoji) == "⚔":
-        await reaction.message.channel.send(user.name + "님이 딜러를 지원")
-
-        print(party_rank)
-    if str(reaction.emoji) == "🛡":
-        await reaction.message.channel.send(user.name + "님이 서폿을 지원")
 
 
 access_token = os.environ["BOT_TOKEN"]
